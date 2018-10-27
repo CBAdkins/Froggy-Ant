@@ -16,4 +16,4 @@ The game must have:
 ## Dates
 The official Challenge period starts on October 2, 2018 and ends on November 30, 2018 at 11:59pm IDL.
 ## More Info
-[Fall 2018 GameDev Challenge Frogger]<https://www.gamedev.net/blogs/entry/2265494-fall-2018-gamedev-challenge-frogger/>
+[Fall 2018 GameDev Challenge Frogger](https://www.gamedev.net/blogs/entry/2265494-fall-2018-gamedev-challenge-frogger/)

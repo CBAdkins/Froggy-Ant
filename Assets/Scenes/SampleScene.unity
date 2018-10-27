@@ -139,7 +139,7 @@ MeshCollider:
   m_GameObject: {fileID: 13587491}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -567,6 +567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.5
   spawnPoint: {x: 0, y: -4.5, z: 0}
+  movementDelayTime: 0.25
 --- !u!212 &1220535799
 SpriteRenderer:
   m_ObjectHideFlags: 0

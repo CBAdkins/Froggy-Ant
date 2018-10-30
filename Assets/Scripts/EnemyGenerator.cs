@@ -24,6 +24,9 @@ public class EnemyGenerator : MonoBehaviour {
 
         position = position > 0 ? position + .5f : position - .5f;
 
-        GameObject.Instantiate(Enemies[enemyIndex], new Vector3(transform.position.x, position, transform.position.z), transform.rotation);
+        var enemy = GameObject.Instantiate(Enemies[enemyIndex], new Vector3(transform.position.x, position, transform.position.z), transform.rotation);
+
+        // There has to be a more graceful way to do this. Look into Quaternions.
+        enemy.transform.Rotate(new Vector3(0, 0, 90)); 
     }
 }

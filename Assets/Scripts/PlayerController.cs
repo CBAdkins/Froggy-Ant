@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float movementDelayTime = 0.1f;
 
     private float movementTimer = 0.0f;
-    private Bounds boundary = new Bounds(Vector3.zero, new Vector3(10, 10, 0));
 
     // Use this for initialization
     void Start()

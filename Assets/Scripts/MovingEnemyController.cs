@@ -28,4 +28,12 @@ public class MovingEnemyController : MonoBehaviour {
             other.GetComponent<PlayerController>().Die();
         }
     }
+
+	/// <summary>
+	/// OnBecameInvisible is called when the renderer is no longer visible by any camera.
+	/// </summary>
+	void OnBecameInvisible()
+	{
+        Destroy(gameObject);
+    }
 }

@@ -52,19 +52,12 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().MovePosition(newPosition);
         }
-
-        /*if (Physics.Raycast(transform.position, horizontal == 0 ? Vector3.up : Vector3.left, movementSpeed) == false)
-        {
-            gameObject.GetComponent<Rigidbody2D>().MovePosition(newPosition);
-        } */
+        
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+             transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
         movementTimer = 0.0f;
     }
-    /* if(boundary.Contains(newPosition)){
-        gameObject.GetComponent<Rigidbody2D>().MovePosition(newPosition);
-        // transform.position = newPosition;
-    }
-} */
 
     public void Die()
     {
